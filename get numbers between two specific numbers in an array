@@ -1,0 +1,20 @@
+def p_p(arr,x,y):
+    total=[]
+    balls=True
+    for i in arr:
+        while balls:
+            if i!=x:
+                break
+            else:
+                balls=False
+        while not balls:
+            if i!=y:
+                total.append(i)
+                break
+            else:
+                total.append(i)
+                balls=True
+                break
+                return total
+
+                
