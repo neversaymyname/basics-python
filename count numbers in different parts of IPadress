@@ -1,0 +1,26 @@
+Ipadress = input('Enter the IP Adress')
+
+segment=1
+segment_length=0
+bull=True
+
+for char in range(0,len(Ipadress)):
+    while bull:
+        if Ipadress[char]!='.':
+            segment_length+=1
+            break
+        
+        else:
+            print('segment {0} has {1} characters'.format(segment,segment_length))
+            segment+=1
+            segment_length=0
+            break
+            
+if Ipadress[char]!='.':
+        print('segment {0} has {1} characters'.format(segment,segment_length))
+    
+    ##if input is 112.113.312.0.....
+###output---segment 1 has 3 characters
+####segment 2 has 3 characters
+###segment 3 has 3 characters
+####segment 4 has 1 characters
