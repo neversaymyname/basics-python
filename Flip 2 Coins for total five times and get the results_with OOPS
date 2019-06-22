@@ -38,5 +38,7 @@ def toss():
             p=1
             turns-=1
     return 'player 1 stats= heads - {0} and tails - {1}'.format(len(c1.h),len(c1.t)) + 'player 2 stats= heads - {0} and tails - {1}'.format(len(c2.h),len(c2.t))
-    
+
+
+toss()
                 
